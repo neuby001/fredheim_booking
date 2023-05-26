@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="dev_favorite_menu" name="Favorites" parent="hotel.hotel_management_menu" sequence="100" />
+    <menuitem
+        id="menu_action_ui_view"
+        name="UI - Views"
+        sequence="10"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="menu_ir_action_window"
+        name="UI - Window Actions"
+        sequence="20"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="menu_grant_menu_access"
+        name="UI - Menu Items"
+        sequence="30"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="ir_model_model_fields"
+        name="Fields"
+        sequence="40"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="ir_model_model_menu"
+        name="Models"
+        sequence="50"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="menu_ir_access_act"
+        name="Security - Access Rights"
+        sequence="60"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="menu_action_rule"
+        name="Security - Record Rules"
+        sequence="70"
+        parent="dev_favorite_menu"
+    />
+    <menuitem
+        id="ir_model_data_menu"
+        name="External ID"
+        sequence="80"
+        parent="dev_favorite_menu"
+    />
+</odoo>
