@@ -9,6 +9,7 @@
                 maps_by_id = "model.maps_by_id"
                 items="model.items"
                 items_by_id = "model.items_by_id"
+                isMapEmpty = "model.isMapEmpty"
             />
         </Layout>
     </t>

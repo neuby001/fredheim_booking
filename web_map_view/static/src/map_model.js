@@ -64,22 +64,22 @@ export class MapModel {
             )
         );
         this.itemsLength = length;
-        this.items = [...records];
+        this.items = records;
     }
 
     async getById() {
         this.maps_by_id = {};
         this.items_by_id = {};
-        for (let item of [...this.items]) {
+        for (let item of this.items) {
             this.items_by_id[item.id] = item;
         }
-        for (let map of [...this.maps]) {
+        for (let map of this.maps) {
             this.maps_by_id[map.id] = map;
             map.items = []
             for (let itemId of map[this.itemsField]) {
                 // item -> map, map -> items
-                this.items_by_id[itemId].map = map;
-                map.items.push(this.items_by_id[itemId]);
+                // this.items_by_id[itemId].map = map;
+                // map.items.push(this.items_by_id[itemId]);
             }
         }
     }

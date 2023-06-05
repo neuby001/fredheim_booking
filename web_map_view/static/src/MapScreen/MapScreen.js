@@ -152,7 +152,8 @@
             }
         }
         get activeMap() {
-            return this.props.maps_by_id[this.state.selectedMapId];
+            const activeMap = this.props.maps_by_id[this.state.selectedMapId];
+            return activeMap;
         }
         get activeItems() {
             return this.activeMap.items;
